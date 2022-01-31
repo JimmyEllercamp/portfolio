@@ -29,3 +29,20 @@ span {
     margin: 0 auto;
 }
 
+body {
+    color: $base-black;
+    font-family: 'Playfair Display', serif;
+    filter: sepia(8%);
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    // text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
