@@ -1,0 +1,36 @@
+.landing {
+    background-color: $base-white;
+    .landing-container {
+        display: flex;
+        padding: 7% 0;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 4rem;
+            // display: block;
+            width: 50%;
+        }
+        width: 70%;
+    
+    }
+    .miniBio {
+        width: 30%;
+        padding-left: 3%;
+        border-left: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ul {
+            margin: 5% 0 0 0;
+            padding: 0;
+            display: flex;
+            li {
+                list-style: none;
+                padding-right: 5%;
+            }
+        }
+    }
+}

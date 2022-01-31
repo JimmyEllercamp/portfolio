@@ -238,3 +238,113 @@ html {
 html {
   font-size: 125%;
 }
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f7f5f7;
+  padding-top: 3%;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  padding-right: 5%;
+}
+
+.landing {
+  background-color: #f7f5f7;
+}
+.landing .landing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7% 0;
+}
+.landing .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+.landing .header h1 {
+  font-size: 4rem;
+  width: 50%;
+}
+.landing .miniBio {
+  width: 30%;
+  padding-left: 3%;
+  border-left: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.landing .miniBio ul {
+  margin: 5% 0 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.landing .miniBio ul li {
+  list-style: none;
+  padding-right: 5%;
+}
+
+.heroImage {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(75%, #ddd6cc), color-stop(75%, #f7f5f7));
+  background: linear-gradient(to top, #ddd6cc 75%, #f7f5f7 75%);
+}
+.heroImage .heroContainer {
+  position: relative;
+  bottom: 140px;
+  width: 40%;
+  margin: 0 auto;
+}
+.heroImage .heroContainer img {
+  border: 1px solid #ddd6cc;
+  max-width: 100%;
+  border-radius: 50%;
+}

@@ -1,4 +1,16 @@
+$base-white: rgb(247, 245, 247);
+$base-gray: rgb(234, 231, 225);
+$base-black: rgb(30, 37, 40);
+$base-brown: rgb(221, 214, 204);
+$more-brown: rgb(223, 197, 171);
+$base-coffee: rgb(205, 179, 152);
+$base-orange: rgb(239, 135, 99);
+$base-blue: rgb(113, 188, 214);
+$dark-blue: rgb(28, 43, 108);
+
 
 @import 'setup';
 @import 'header';
+@import 'landing';
+@import 'heroImage';
 @import 'footer';

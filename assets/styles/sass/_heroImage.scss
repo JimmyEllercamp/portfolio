@@ -1,0 +1,15 @@
+.heroImage {
+    background: linear-gradient(to top, $base-brown 75%, $base-white 75%);
+    .heroContainer {
+        position: relative;
+        bottom: 140px;
+        width: 40%;
+        margin: 0 auto;
+        img {
+            border: 1px solid $base-brown;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+}
