@@ -16,16 +16,28 @@ header {
     // height: 10vh;
     padding-top: 3%;
     nav {
+        .fa-chevron-circle-down {
+            font-size: 1.5rem;
+        }
         display: flex;
         justify-content: space-between;
+        position: relative;
         ul {
-            display: flex;
+            position: absolute;
+            visibility: hidden;
+            // display: flex;
             margin: 0;
             padding: 0;
             li {
                 list-style: none;
                 padding-right: 5%;
             }
+        }
+        .fa-moon {
+            transform: rotate(-130deg);
+            position: absolute;
+            right: 0;
+            font-size: 1.25rem;
         }
     }
 }

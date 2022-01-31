@@ -1,5 +1,5 @@
 .aboutMe {
-    background-color: $base-brown;
+    background-color: $base-coffee;
     // display: flex;
     .aboutMeContainer {
         padding-bottom: 5%;
@@ -12,6 +12,7 @@
             position: relative;
             left: 200px;
             padding-bottom: 3%;
+            color: $base-white;
         }
         .aboutMeFlex {
             display: flex;

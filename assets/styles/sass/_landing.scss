@@ -1,6 +1,7 @@
 .landing {
-    background-color: $base-white;
-    .landing-container {
+ background: linear-gradient(to top, $base-coffee 50%, $base-white 50%);
+
+ .landing-container {
         display: flex;
         padding: 4% 0;
     }
@@ -12,35 +13,66 @@
             font-size: 4rem;
             text-transform: uppercase;
             letter-spacing: -5px;
-            font-weight: 600;
+            font-weight: 800;
             width: 50%;
-            text-align: end;
-        }
-        h3 {
-            font-weight: 400;
-            font-size: 1.5rem;
+            text-align: start;
             position: relative;
-            left: 16%;
-        }
-        width: 70%;
-    
-    }
-    .miniBio {
-        width: 30%;
-        padding: 4% 3%;
-        border-left: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        letter-spacing: 1px;
-        ul {
-            margin: 5% 0 0 0;
-            padding: 0;
-            display: flex;
-            li {
-                list-style: none;
-                padding-right: 5%;
+            // bottom: 6%;
+            top: 3.5%;
+            line-height: 1;
+            .headerWord1 {
+                color: $base-coffee;
+            }
+            .headerWord2 {
+                color: $base-white;
+                position: relative;
+                left: 20%;
             }
         }
+        h3 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            position: relative;
+            // right: 9%;
+            left: 20%;
+            top: 5%;
+            // bottom: 8%;
+            color: $base-white;
+        }
+        width: 50%;
+    
     }
+    .heroContainer {
+        // background: linear-gradient(to top, $base-brown 50%, $base-white 50%);
+        height: 375px;
+        
+        width: 30%;
+        margin: 0 auto;
+        img {
+            border: 1px solid $base-brown;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        
+
+    }
+    // .miniBio {
+    //     width: 30%;
+    //     padding: 4% 3%;
+    //     border-left: 1px solid black;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     letter-spacing: 1px;
+    //     ul {
+    //         margin: 5% 0 0 0;
+    //         padding: 0;
+    //         display: flex;
+    //         li {
+    //             list-style: none;
+    //             padding-right: 5%;
+    //         }
+    //     }
+    // }
 }
