@@ -15,11 +15,11 @@
     <header>
         <nav class="wrapper">
             <i class="fas fa-chevron-circle-down"></i>
-            <ul>
-                <li>About Me</li>
-                <li>Resume</li>
-                <li>Projects</li>
-                <li>Music</li>
+            <ul class="hiddenMenu">
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#">Projects</li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <span><i class="far fa-moon"></i></span>
         </nav>
@@ -38,17 +38,21 @@
         </section>
         <section class="aboutMe" id="aboutMe">
             <div class="aboutMeContainer wrapper">
-                <h2>About Me</h2>
                 <div class="aboutMeFlex">
-
+                    
                     <div class="blank">
-                        <p>Perhaps an image here?</p>
-    
+                        <h2>About Me</h2>
+                        <p>I'm a Front-End Developer based in Toronto and I love creating vibrant interactive designs, music, and travelling.</p>
+                        <ul>
+                            <li><a href="https://github.com/JimmyEllercamp"><i class="fab fa-github"></a></i></li>
+                            <li><a><i class="fab fa-twitter"></a></i></li>
+                            <li><a href="mailto:j.ellercamp@gmail.com"><i class="fas fa-envelope"></a></i></li>
+                        </ul>
                     </div>
                     <div class="bio">
                         <p>My name is James Ellercamp. I have been coding as a Front-End Developer since 2020, and have completed Juno College of Technology's Immersive Web Development Bootcamp, and Juno's Web Dev course in '21 - '22.</p>
-                        <p>My life before coding was as a composer / musician in Australia and Canada, and now I aim to combine the two skills to build some exciting hybrid projects in the future.</p>
-                        <button>View Resume</button>
+                        <p>My life before coding was as a composer / musician in Australia and Canada, where I wrote music for screen media, produced and performed.</p><p> Now I aim to combine the two skills to build some exciting hybrid projects in the future.</p>
+                        <a href="assets/files/james-ellercamp-resume5.pdf">View Resume</a>
                 </div>
             </div>
             </div>
@@ -86,5 +90,6 @@
 
     </footer>
 
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

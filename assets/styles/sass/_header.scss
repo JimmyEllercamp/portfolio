@@ -13,24 +13,46 @@ $dark-blue: rgb(28, 43, 108);
 
 header {
     background-color: rgb(247, 245, 247);
-    // height: 10vh;
     padding-top: 3%;
     nav {
+        color: $base-coffee;
+        padding-bottom: 6%;
         .fa-chevron-circle-down {
+            position: relative;
             font-size: 1.5rem;
+            transition: 1s transform ease, 1.5s color ease;
+            transform: scale(1);
+            animation: fadeIn 5s ease-in;
+
         }
         display: flex;
         justify-content: space-between;
         position: relative;
         ul {
+            // text-align: end;
             position: absolute;
-            visibility: hidden;
-            // display: flex;
+            opacity: 0;
+            top: 40px;
+            left: 1.2%;
             margin: 0;
-            padding: 0;
+            padding: 1%;
+            border-left: 1px solid $more-brown;
+            transition: .75s opacity .5s ease;
             li {
                 list-style: none;
-                padding-right: 5%;
+                padding: 5%;
+                letter-spacing: 1px;
+                font-weight: 600;
+                perspective: 500;
+                a {
+                    text-decoration: none;
+                    color: $base-coffee;
+                    transition: 0.3s color ease-out;
+                    
+                }
+                a:hover {
+                    color: $base-blue;
+                }
             }
         }
         .fa-moon {
@@ -38,6 +60,8 @@ header {
             position: absolute;
             right: 0;
             font-size: 1.25rem;
+            animation: fadeIn 5s ease-in;
         }
     }
 }
+
