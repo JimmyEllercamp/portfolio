@@ -1,5 +1,6 @@
 .aboutMe {
-    background: linear-gradient(to bottom, $base-coffee 80.75%, $base-brown 80.75%);
+    // background: linear-gradient(to bottom, $base-coffee 80.75%, $base-brown 80.75%);
+    background-color: $base-coffee;
     color: $base-black;
     padding-top: 10%;
     .aboutMeContainer {
@@ -33,10 +34,10 @@
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    right: 3%;
+                    right: 4%;
                     
                     li {
-                        margin: 0 30%;
+                        margin: 0 15%;
                         transition: 0.4s transform ease-out;
                         a {
                             color: $base-orange;
@@ -79,10 +80,9 @@
                     font-weight: 600;
                     letter-spacing: 1px;
                     text-transform: uppercase;
-                    border: 2px solid $base-orange;
                     border-radius: 8%;
                     margin: 5% auto;
-                    transition: 0.3s transform ease-out, 0.3s background-color ease-out, 0.3s box-shadow ease-out, 0.3s text-shadow ease-out;
+                    transition: 0.3s transform ease-out, 0.3s background-color ease-out;
                 }
                 button:hover,
                 button:focus,
@@ -90,8 +90,6 @@
                 a:focus {
                     transform: scale(1.05);
                     background-color: $base-blue;
-                    box-shadow: 5px 5px 8px $dark-blue;
-                    text-shadow: 1px 1px $base-black, -1px -1px $base-gray;
                 }
                 button:active,
                 a:active {

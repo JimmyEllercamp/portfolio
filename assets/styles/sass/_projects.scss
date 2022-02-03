@@ -1,9 +1,11 @@
 .projects {
-    background: linear-gradient(to bottom, $base-brown 75%, $base-white 75%);
+    // background: linear-gradient(to bottom, $base-brown 75%, $base-white 75%);
+    background: $base-brown;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 7%;
     h2 {
         font-size: 3.5rem;
         font-weight: 600;
@@ -15,6 +17,7 @@
         width: 300px;
         position: relative;
         left: 300px;
+        margin-top: 5%; 
         span {
             position: relative;
             left: 25%;
