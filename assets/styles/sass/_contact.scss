@@ -1,0 +1,47 @@
+.contact {
+    background: $base-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contactBox {
+        margin-top: 5%;
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -3px;
+            color: $base-coffee;
+            text-align: end;
+            text-transform: uppercase;
+            display: inline-block;
+            width: 300px;
+            position: relative;
+            right: 150px;
+            margin-bottom: 15%;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                font-size: 2.5rem;
+                transition: 0.4s transform ease-out;
+                padding: 0 25%;
+                a {
+                    color: $base-orange;
+                    transition: 0.4s color ease-out;
+                }
+                a:hover,
+                a:focus {
+                    color: $base-blue;
+                }
+            }
+            li:hover,
+            li:focus {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

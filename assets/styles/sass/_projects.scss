@@ -1,0 +1,67 @@
+.projects {
+    background: linear-gradient(to bottom, $base-brown 75%, $base-white 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        letter-spacing: -3px;
+        color: $base-orange;
+        text-align: end;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 300px;
+        position: relative;
+        left: 300px;
+        span {
+            position: relative;
+            left: 25%;
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        li {
+            width: calc(100% / 2);
+            padding: 2.5%;
+            div {
+                transform: translateZ(-100px);
+                transition: 1s transform ease-out, 1s box-shadow ease-out, 1s filter ease-out;
+                background: none;
+                img {
+                    max-width: 100%;
+                    transform: scale(1);
+                    transition: .5s transform ease-out, .5s filter ease-out;
+                    filter: saturate(50%);
+
+                }
+
+                img:hover {
+                    transform: scale(1.02);
+                    filter: saturate(100%);
+                }
+
+                h3 {
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $base-orange;
+                    // display: none;
+
+                }
+            }
+            div:hover,
+            div:focus {
+                // box-shadow: 25px 35px 15px rgb(95, 95, 95),
+                // 0px -25px 15px rgb(95, 95, 95);
+                // // transform: translateZ(350px);
+                // box-shadow: 5px 10px 5px rgb(95, 95, 95);
+                filter: saturate(100%);
+            }
+        }
+    }
+}
