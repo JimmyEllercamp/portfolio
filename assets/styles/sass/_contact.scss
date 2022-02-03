@@ -2,31 +2,40 @@
     background: $base-coffee;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 5% 0;
     .contactBox {
         margin-top: 5%;
         h2 {
             font-size: 3.5rem;
             font-weight: 700;
             letter-spacing: -3px;
-            color: $base-coffee;
+            color: $base-white;
             text-align: end;
             text-transform: uppercase;
-            display: inline-block;
-            width: 300px;
-            margin-bottom: 15%;
+            margin-bottom: 7%;
         }
         ul {
             display: flex;
             justify-content: center;
             list-style: none;
-            margin: 0;
+            margin: 0 0 10% 0;
             padding: 0;
             li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $base-orange;
+                    transition: 0.3s color ease-out;
+                }
                 font-size: 2.5rem;
                 transition: 0.4s transform ease-out;
-                padding: 0 25%;
+                padding: 0 5%;
                 a {
                     color: $base-orange;
                     transition: 0.4s color ease-out;
@@ -35,11 +44,21 @@
                 a:focus {
                     color: $base-blue;
                 }
+                a:hover + p,
+                a:focus + p {
+                    color: $base-black;
+                }
             }
             li:hover,
             li:focus {
                 transform: scale(1.2);
             }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

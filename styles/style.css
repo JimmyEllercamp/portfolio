@@ -338,6 +338,7 @@ header nav .fa-moon {
   font-size: 1.25rem;
   -webkit-animation: fadeIn 5s ease-in;
           animation: fadeIn 5s ease-in;
+  display: none;
 }
 
 .landing {
@@ -507,8 +508,7 @@ header nav .fa-moon {
   }
 }
 .aboutMe {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80.75%, #cdb398), color-stop(80.75%, #ddd6cc));
-  background: linear-gradient(to bottom, #cdb398 80.75%, #ddd6cc 80.75%);
+  background-color: #cdb398;
   color: #1e2528;
   padding-top: 10%;
 }
@@ -561,10 +561,10 @@ header nav .fa-moon {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  right: 3%;
+  right: 4%;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li {
-  margin: 0 30%;
+  margin: 0 15%;
   -webkit-transition: 0.4s -webkit-transform ease-out;
   transition: 0.4s -webkit-transform ease-out;
   transition: 0.4s transform ease-out;
@@ -616,13 +616,12 @@ header nav .fa-moon {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: 2px solid #ef8763;
   border-radius: 8%;
   margin: 5% auto;
-  -webkit-transition: 0.3s background-color ease-out, 0.3s text-shadow ease-out, 0.3s -webkit-transform ease-out, 0.3s -webkit-box-shadow ease-out;
-  transition: 0.3s background-color ease-out, 0.3s text-shadow ease-out, 0.3s -webkit-transform ease-out, 0.3s -webkit-box-shadow ease-out;
-  transition: 0.3s transform ease-out, 0.3s background-color ease-out, 0.3s box-shadow ease-out, 0.3s text-shadow ease-out;
-  transition: 0.3s transform ease-out, 0.3s background-color ease-out, 0.3s box-shadow ease-out, 0.3s text-shadow ease-out, 0.3s -webkit-transform ease-out, 0.3s -webkit-box-shadow ease-out;
+  -webkit-transition: 0.3s background-color ease-out, 0.3s -webkit-transform ease-out;
+  transition: 0.3s background-color ease-out, 0.3s -webkit-transform ease-out;
+  transition: 0.3s transform ease-out, 0.3s background-color ease-out;
+  transition: 0.3s transform ease-out, 0.3s background-color ease-out, 0.3s -webkit-transform ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:focus,
@@ -631,9 +630,6 @@ header nav .fa-moon {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background-color: #71bcd6;
-  -webkit-box-shadow: 5px 5px 8px #1c2b6c;
-          box-shadow: 5px 5px 8px #1c2b6c;
-  text-shadow: 1px 1px #1e2528, -1px -1px #eae7e1;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:active,
 .aboutMe .aboutMeContainer .aboutMeFlex .bio a:active {
@@ -646,8 +642,7 @@ header nav .fa-moon {
 }
 
 .projects {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #ddd6cc), color-stop(75%, #f7f5f7));
-  background: linear-gradient(to bottom, #ddd6cc 75%, #f7f5f7 75%);
+  background: #ddd6cc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,6 +655,7 @@ header nav .fa-moon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 7%;
 }
 .projects h2 {
   font-size: 3.5rem;
@@ -672,6 +668,7 @@ header nav .fa-moon {
   width: 300px;
   position: relative;
   left: 300px;
+  margin-top: 5%;
 }
 .projects h2 span {
   position: relative;
@@ -748,10 +745,12 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -5px;
-  color: #71bcd6;
+  color: #ef8763;
   text-align: end;
   text-transform: uppercase;
   position: relative;
+  right: 25%;
+  margin: 5% 0 3%;
 }
 .tools ul {
   display: -webkit-box;
@@ -764,7 +763,7 @@ header nav .fa-moon {
       flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 5%;
 }
 .tools ul li {
   display: -webkit-box;
@@ -812,12 +811,12 @@ header nav .fa-moon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5% 0;
 }
 .contact .contactBox {
   margin-top: 5%;
@@ -826,12 +825,10 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -3px;
-  color: #cdb398;
+  color: #f7f5f7;
   text-align: end;
   text-transform: uppercase;
-  display: inline-block;
-  width: 300px;
-  margin-bottom: 15%;
+  margin-bottom: 7%;
 }
 .contact .contactBox ul {
   display: -webkit-box;
@@ -841,16 +838,36 @@ header nav .fa-moon {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  margin: 0;
+  margin: 0 0 10% 0;
   padding: 0;
 }
 .contact .contactBox ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2.5rem;
   -webkit-transition: 0.4s -webkit-transform ease-out;
   transition: 0.4s -webkit-transform ease-out;
   transition: 0.4s transform ease-out;
   transition: 0.4s transform ease-out, 0.4s -webkit-transform ease-out;
-  padding: 0 25%;
+  padding: 0 5%;
+}
+.contact .contactBox ul li p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ef8763;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
 }
 .contact .contactBox ul li a {
   color: #ef8763;
@@ -861,8 +878,53 @@ header nav .fa-moon {
 .contact .contactBox ul li a:focus {
   color: #71bcd6;
 }
+.contact .contactBox ul li a:hover + p,
+.contact .contactBox ul li a:focus + p {
+  color: #1e2528;
+}
 .contact .contactBox ul li:hover,
 .contact .contactBox ul li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+.contact .contactBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7vh;
+  color: #f7f5f7;
+  background: #cdb398;
+  font-weight: 600;
+}
+footer span a {
+  text-decoration: none;
+  color: #f7f5f7;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
+}
+footer span a:hover,
+footer span a:focus {
+  color: #ef8763;
 }
