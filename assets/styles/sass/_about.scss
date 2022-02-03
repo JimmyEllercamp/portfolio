@@ -1,5 +1,5 @@
 .aboutMe {
-    background-color: $base-coffee;
+    background: linear-gradient(to bottom, $base-coffee 80.75%, $base-brown 80.75%);
     color: $base-black;
     padding-top: 10%;
     // display: flex;
@@ -13,8 +13,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                position: relative;
-                // top: 80px;
+                // position: relative;
+                // top: 100px;
                 h2 {
                     display: inline-block;
                     font-size: 3.5rem;
@@ -22,7 +22,7 @@
                     letter-spacing: -5px;
                     color: $base-white;
                     position: relative;
-                    right: 8px;
+                    // right: 8px;
 
                 }
                 p {
@@ -31,16 +31,17 @@
                     letter-spacing: 1px;
                     padding: 15% 0;
                     text-align: end;
+                    display: none;
                 }
                 ul {
                     list-style: none;
                     display: flex;
                     justify-content: center;
                     position: relative;
+                    right: 3%;
                     
                     li {
-                        padding: 5% 30%;
-                        margin: 0;
+                        margin: 0 30%;
                         transition: 0.2s transform ease-out;
                         a {
                             color: $base-orange;

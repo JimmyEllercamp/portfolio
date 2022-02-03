@@ -33,6 +33,7 @@ body {
     color: $base-black;
     font-family: 'Playfair Display', serif;
     filter: sepia(8%);
+    perspective: 500px;
 }
 
 button {
