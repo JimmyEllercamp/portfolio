@@ -567,16 +567,16 @@ header nav .fa-moon {
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li {
   margin: 0 30%;
-  -webkit-transition: 0.2s -webkit-transform ease-out;
-  transition: 0.2s -webkit-transform ease-out;
-  transition: 0.2s transform ease-out;
-  transition: 0.2s transform ease-out, 0.2s -webkit-transform ease-out;
+  -webkit-transition: 0.4s -webkit-transform ease-out;
+  transition: 0.4s -webkit-transform ease-out;
+  transition: 0.4s transform ease-out;
+  transition: 0.4s transform ease-out, 0.4s -webkit-transform ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a {
   color: #ef8763;
   font-size: 2rem;
-  -webkit-transition: 0.2s color ease-out;
-  transition: 0.2s color ease-out;
+  -webkit-transition: 0.4s color ease-out;
+  transition: 0.4s color ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a:focus {
@@ -584,8 +584,8 @@ header nav .fa-moon {
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li:focus {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio {
   border-left: 2px solid #ef8763;
@@ -728,4 +728,70 @@ header nav .fa-moon {
 .projects ul li div:focus {
   -webkit-filter: saturate(100%);
           filter: saturate(100%);
+}
+
+.contact {
+  background: #f7f5f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contactBox {
+  margin-top: 5%;
+}
+.contact .contactBox h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: #cdb398;
+  text-align: end;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  right: 150px;
+  margin-bottom: 15%;
+}
+.contact .contactBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact .contactBox ul li {
+  font-size: 2.5rem;
+  -webkit-transition: 0.4s -webkit-transform ease-out;
+  transition: 0.4s -webkit-transform ease-out;
+  transition: 0.4s transform ease-out;
+  transition: 0.4s transform ease-out, 0.4s -webkit-transform ease-out;
+  padding: 0 25%;
+}
+.contact .contactBox ul li a {
+  color: #ef8763;
+  -webkit-transition: 0.4s color ease-out;
+  transition: 0.4s color ease-out;
+}
+.contact .contactBox ul li a:hover,
+.contact .contactBox ul li a:focus {
+  color: #71bcd6;
+}
+.contact .contactBox ul li:hover,
+.contact .contactBox ul li:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

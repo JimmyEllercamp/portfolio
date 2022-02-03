@@ -2,7 +2,6 @@
     background: linear-gradient(to bottom, $base-coffee 80.75%, $base-brown 80.75%);
     color: $base-black;
     padding-top: 10%;
-    // display: flex;
     .aboutMeContainer {
         padding-bottom: 5%;
         .aboutMeFlex {
@@ -13,8 +12,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                // position: relative;
-                // top: 100px;
                 h2 {
                     display: inline-block;
                     font-size: 3.5rem;
@@ -22,8 +19,6 @@
                     letter-spacing: -5px;
                     color: $base-white;
                     position: relative;
-                    // right: 8px;
-
                 }
                 p {
                     width: 75%;
@@ -42,21 +37,20 @@
                     
                     li {
                         margin: 0 30%;
-                        transition: 0.2s transform ease-out;
+                        transition: 0.4s transform ease-out;
                         a {
                             color: $base-orange;
                             font-size: 2rem;
-                            transition: 0.2s color ease-out;
+                            transition: 0.4s color ease-out;
                         }
                         a:hover,
                         a:focus {
                             color: $base-blue;
-                            // transform: scale(1.2);
                         }
                     }
                     li:hover,
                     li:focus {
-                        transform: scale(1.3);
+                        transform: scale(1.2);
                     }
                 }
                
