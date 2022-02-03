@@ -406,9 +406,7 @@ header nav .fa-moon {
   margin: 0 auto;
 }
 .landing .heroContainer img {
-  border: 1px solid #ddd6cc;
   max-width: 100%;
-  border-radius: 50%;
 }
 
 @-webkit-keyframes slideUp {
@@ -730,8 +728,83 @@ header nav .fa-moon {
           filter: saturate(100%);
 }
 
+.tools {
+  background-color: #f7f5f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tools h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -5px;
+  color: #71bcd6;
+  text-align: end;
+  text-transform: uppercase;
+  position: relative;
+}
+.tools ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tools ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100px;
+  padding: 5%;
+  color: #cdb398;
+}
+.tools ul li i {
+  font-size: 3rem;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
+}
+.tools ul li i:hover,
+.tools ul li i:focus {
+  color: #71bcd6;
+}
+.tools ul li i:hover + p,
+.tools ul li i:focus + p {
+  color: #1e2528;
+}
+.tools ul li p {
+  font-size: 1rem;
+  -webkit-transition: 0.3s color ease-out;
+  transition: 0.3s color ease-out;
+}
+
 .contact {
-  background: #f7f5f7;
+  background: #cdb398;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,8 +831,6 @@ header nav .fa-moon {
   text-transform: uppercase;
   display: inline-block;
   width: 300px;
-  position: relative;
-  right: 150px;
   margin-bottom: 15%;
 }
 .contact .contactBox ul {
