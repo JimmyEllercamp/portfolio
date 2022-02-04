@@ -1,15 +1,17 @@
+
+// Selecting the menu item elements
+
 const dropMenu = document.querySelector('.fa-chevron-circle-down');
 const hiddenMenu = document.querySelector('.hiddenMenu');
+
+// adding a property to the dropMenu to toggle whether the menu is opened or not
+
 dropMenu.isClicked = false;
-console.log(dropMenu);
 
-
-
-
-
+// Click event handler for the dropdown menu
 
 const menuClick = () => {
-    // if (hiddenMenu.style.opacity = '0') {
+    // Conditional statement checking if the icon has been clicked or not, and rendering the menu accordingly
         if (!dropMenu.isClicked){
         hiddenMenu.style.opacity = '1';
         dropMenu.style.transform = 'rotate(-180deg)';
@@ -23,6 +25,8 @@ const menuClick = () => {
     }
 }
 
+
+// Adding the click event to the item
 
 dropMenu.addEventListener('click', menuClick);
 

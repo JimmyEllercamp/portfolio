@@ -4,10 +4,7 @@
 
  .landing-container {
         display: flex;
-        // flex-direction: column;
         align-items: center;
-        // border: 1px solid red;
-        // padding: 4% 0;
         height: 93vh;
     }
     .header {
@@ -52,7 +49,6 @@
     
     }
     .heroContainer {
-        // height: 375px;
         transform: scale(1.3);
         width: 30%;
         margin: 0 auto;

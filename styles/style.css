@@ -265,11 +265,6 @@ body {
           perspective: 500px;
 }
 
-button {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 1px;
-}
-
 p {
   line-height: 1.5;
   letter-spacing: 1px;

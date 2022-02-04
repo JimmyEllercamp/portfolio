@@ -1,5 +1,4 @@
 .projects {
-    // background: linear-gradient(to bottom, $base-brown 75%, $base-white 75%);
     background: $base-brown;
     display: flex;
     flex-direction: column;
@@ -54,8 +53,6 @@
                     text-align: center;
                     text-transform: uppercase;
                     color: $base-orange;
-                    // display: none;
-
                 }
             }
             div:hover,
