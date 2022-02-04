@@ -577,7 +577,7 @@ header nav .fa-moon {
   transition: 0.4s transform ease-out, 0.4s -webkit-transform ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a {
-  color: #ef8763;
+  color: #e76b6b;
   font-size: 2rem;
   -webkit-transition: 0.4s color ease-out;
   transition: 0.4s color ease-out;
@@ -592,7 +592,7 @@ header nav .fa-moon {
           transform: scale(1.2);
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio {
-  border-left: 2px solid #ef8763;
+  border-left: 2px solid #e76b6b;
   width: 65%;
   padding: 5%;
   display: -webkit-box;
@@ -617,7 +617,7 @@ header nav .fa-moon {
   padding: 2%;
   text-decoration: none;
   border: none;
-  background-color: #ef8763;
+  background-color: #e76b6b;
   color: #f7f5f7;
   font-weight: 600;
   letter-spacing: 1px;
@@ -644,7 +644,7 @@ header nav .fa-moon {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  background-color: #ef8763;
+  background-color: #e76b6b;
 }
 
 .projects {
@@ -667,7 +667,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 600;
   letter-spacing: -3px;
-  color: #ef8763;
+  color: #e76b6b;
   text-align: end;
   text-transform: uppercase;
   display: inline-block;
@@ -724,7 +724,7 @@ header nav .fa-moon {
 .projects ul li div h3 {
   text-align: center;
   text-transform: uppercase;
-  color: #ef8763;
+  color: #e76b6b;
 }
 .projects ul li div:hover,
 .projects ul li div:focus {
@@ -752,7 +752,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -5px;
-  color: #ef8763;
+  color: #e76b6b;
   text-align: end;
   text-transform: uppercase;
   position: relative;
@@ -872,12 +872,12 @@ header nav .fa-moon {
 .contact .contactBox ul li p {
   font-size: 1rem;
   font-weight: 600;
-  color: #ef8763;
+  color: #e76b6b;
   -webkit-transition: 0.3s color ease-out;
   transition: 0.3s color ease-out;
 }
 .contact .contactBox ul li a {
-  color: #ef8763;
+  color: #e76b6b;
   -webkit-transition: 0.4s color ease-out;
   transition: 0.4s color ease-out;
 }
@@ -933,7 +933,7 @@ footer span a {
 }
 footer span a:hover,
 footer span a:focus {
-  color: #ef8763;
+  color: #e76b6b;
 }
 
 @media (max-width: 1103px) {
@@ -1022,7 +1022,7 @@ footer span a:focus {
     margin: 0 15%;
   }
   .aboutMe .aboutMeContainer .aboutMeFlex .bio {
-    border-right: 2px solid #ef8763;
+    border-right: 2px solid #e76b6b;
   }
 
   .projects h2 {
