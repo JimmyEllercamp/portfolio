@@ -13,10 +13,15 @@ $dark-blue: rgb(28, 43, 108);
 
 header {
     background-color: rgb(247, 245, 247);
-    padding-top: 3%;
+    // padding-top: 3%;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
     nav {
         color: $base-coffee;
-        padding-bottom: 6%;
+        // padding-bottom: 6%;
         .fa-chevron-circle-down {
             position: relative;
             font-size: 1.5rem;

@@ -1,0 +1,326 @@
+@media (max-width: 1103px) {
+    
+   .aboutMe {
+       .aboutMeContainer {
+           .aboutMeFlex {
+               .blank {
+                   h2 {
+                       font-size: 2.5rem;
+                    }
+                    ul {
+                        li {
+                            margin: 0 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .projects {
+        h2 {
+            font-size: 2.5rem;
+            left: 200px;
+        }
+    }
+
+    .tools {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .contact {
+        .contactBox {
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 975px) {
+
+    header {
+        nav {
+           .fa-chevron-circle-down {
+               left: 10%;
+           }
+           ul {
+               left: 11.5%;
+           }
+        }
+    }
+
+    .landing {
+        background: linear-gradient(to top, $base-coffee 45%, $base-white 45%);
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .heroContainer {
+                margin-top: 10%;
+                width: 30%;
+            }
+            .header {
+                width: 100%;
+                order: 2;
+                h1 {
+                    position: relative;
+                    left: 10%;
+                }
+                h3 {
+                    display: inline-block;
+                    width: 500px;
+                    overflow: hidden;
+
+                }
+                background: linear-gradient(to top, $base-coffee 50%, $base-white 50%);
+            }
+        }
+    }
+    .wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .aboutMe {
+        .aboutMeContainer {
+            .aboutMeFlex {
+                flex-direction: column;
+                align-items: center;
+                .blank {
+                    ul {
+                        li {
+                            margin: 0 15%;
+                        }
+                    }
+                }
+                .bio {
+                    border-right: 2px solid $base-orange;
+                }
+            }
+        }
+    }
+
+    .projects {
+        h2 {
+            left: -10%;
+        }
+    }
+}
+
+@media (max-width: 715px) {
+    .projects {
+        ul {
+            flex-direction: column;
+            align-items: center;
+            li {
+                width: 80%;
+                
+            }
+        }
+    }
+    footer {
+        p {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .landing {
+        .landing-container {
+            height: auto;
+            .heroContainer {
+                width: 35%;
+            }
+            .header {
+                margin-top: 5%;
+                padding: 10% 0;
+                // position: relative;
+                // top: 3%;
+                h1 {
+                    // width: 80%;
+                    font-size: 2.5rem;
+                    .headerWord1 {
+                        position: relative;
+                        top: 14px;
+                        animation: none;
+                    }
+                    .headerWord2 {
+                        animation: none;
+                        top: 10px;
+                    }
+
+                }
+                h3 {
+                    width: 250px;
+                    font-size: 1.25rem;
+                    left: 10%;
+                }
+                
+            }
+        }
+    }
+    .aboutMe {
+        .aboutMeContainer {
+            .aboutMeFlex {
+                .blank {
+                    h2 {
+                        font-size: 1.8rem;
+                        letter-spacing: -1px;
+                    }
+                    ul {
+                        li {
+                            a {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .projects {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    .tools {
+        h2 {
+            font-size: 1.8rem;
+        }
+        ul {
+            li {
+                i {
+                    font-size: 1.8rem;
+
+                }
+            }
+
+        }
+    }
+    .contact {
+        .contactBox {
+            h2 {
+                font-size: 1.8rem;
+            }
+            ul {
+                li {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        nav {
+            ul {
+                background: $base-white;
+                border: 1px solid $base-coffee;
+                padding: 5%;
+                z-index: 20;
+            }
+        }
+    }
+    .aboutMe {
+        .aboutMeContainer {
+            .aboutMeFlex {
+                .blank {
+                    width: 100%;
+                }
+                .bio {
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 439px) {
+    .landing {
+        .landing-container {
+            .header {
+                height: 50%;
+                h1 {
+                    .headerWord1 {
+
+                    }
+                    .headerWord2 {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .aboutMe {
+        .aboutMeContainer {
+            .aboutMeFlex {
+                .blank {
+                    width: 100%;
+                    h2 {
+                        
+                    }
+                }
+                .bio {
+                    // width: 80%;
+                }
+            }
+        }
+    }
+    .blank {
+        width: 100%;
+    }
+    .contact {
+        .contactBox {
+            h2 {
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+    footer {
+        height: auto;
+        p {
+            text-align: center;
+            margin: 7% auto;
+            // padding-bottom: 15%;
+        }
+    }
+}
+
+
+
+@media (max-width: 380px) {
+
+    .projects {
+        h2 {
+            right: 50px;
+            span {
+                left: 20px;
+            }
+        }
+    }
+    .contact {
+        .contactBox{
+            ul{
+                justify-content: space-around;
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
