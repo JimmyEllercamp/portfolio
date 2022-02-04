@@ -1,9 +1,11 @@
 .landing {
  background: linear-gradient(to top, $base-coffee 50%, $base-white 50%);
+//  height: 90vh;
 
  .landing-container {
         display: flex;
-        padding: 4% 0;
+        align-items: center;
+        height: 93vh;
     }
     .header {
         display: flex;
@@ -17,11 +19,12 @@
             width: 50%;
             text-align: start;
             position: relative;
-            top: 3.5%;
-            line-height: 1;
+            top: 0;
+            line-height: 1.1;
             .headerWord1 {
                 color: $base-coffee;
                 position: relative;
+                top: 20px;
                 animation: slideUp 4s ease-in-out;
                 z-index: 10;
             }
@@ -46,7 +49,6 @@
     
     }
     .heroContainer {
-        height: 375px;
         transform: scale(1.3);
         width: 30%;
         margin: 0 auto;
@@ -61,11 +63,11 @@
 
 @keyframes slideUp {
     0% {
-        top: 80px;
+        top: 90px;
     }
 
     100% {
-        top: 0;
+        top: 20px;
     }
 }
 

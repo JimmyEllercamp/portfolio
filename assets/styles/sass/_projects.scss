@@ -1,5 +1,4 @@
 .projects {
-    // background: linear-gradient(to bottom, $base-brown 75%, $base-white 75%);
     background: $base-brown;
     display: flex;
     flex-direction: column;
@@ -32,6 +31,7 @@
         li {
             width: calc(100% / 2);
             padding: 2.5%;
+            min-width: 325px;
             div {
                 transform: translateZ(-100px);
                 transition: 1s transform ease-out, 1s box-shadow ease-out, 1s filter ease-out;
@@ -53,16 +53,10 @@
                     text-align: center;
                     text-transform: uppercase;
                     color: $base-orange;
-                    // display: none;
-
                 }
             }
             div:hover,
             div:focus {
-                // box-shadow: 25px 35px 15px rgb(95, 95, 95),
-                // 0px -25px 15px rgb(95, 95, 95);
-                // // transform: translateZ(350px);
-                // box-shadow: 5px 10px 5px rgb(95, 95, 95);
                 filter: saturate(100%);
             }
         }
