@@ -610,7 +610,10 @@ header nav .fa-moon {
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio p {
   margin-bottom: 5%;
-  width: 80%;
+  width: 90%;
+  line-height: 1.8;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 400;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button,
 .aboutMe .aboutMeContainer .aboutMeFlex .bio a {
@@ -628,6 +631,10 @@ header nav .fa-moon {
   transition: 0.3s background-color ease-out, 0.3s -webkit-transform ease-out;
   transition: 0.3s transform ease-out, 0.3s background-color ease-out;
   transition: 0.3s transform ease-out, 0.3s background-color ease-out, 0.3s -webkit-transform ease-out;
+}
+.aboutMe .aboutMeContainer .aboutMeFlex .bio button .fa-file-download,
+.aboutMe .aboutMeContainer .aboutMeFlex .bio a .fa-file-download {
+  font-size: 1.2rem;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:focus,
