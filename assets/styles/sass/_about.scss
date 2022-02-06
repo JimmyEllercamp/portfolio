@@ -65,8 +65,13 @@
                 align-items: center;
                 p {
                     margin-bottom: 5%;
-                    width: 80%;
+                    width: 90%;
+                    line-height: 1.8;
+                    font-family: 'IBM Plex Sans Thai Looped',
+                    sans-serif;
+                    font-weight: 400;
                 }
+
                 button,
                 a {
                     padding: 2%;
@@ -80,6 +85,9 @@
                     border-radius: 8%;
                     margin: 5% auto;
                     transition: 0.3s transform ease-out, 0.3s background-color ease-out;
+                    .fa-file-download {
+                        font-size: 1.2rem;
+                    }
                 }
                 button:hover,
                 button:focus,
