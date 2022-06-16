@@ -257,7 +257,7 @@ span {
 }
 
 body {
-  color: #1e2528;
+  color: rgb(30, 37, 40);
   font-family: "Playfair Display", serif;
   -webkit-filter: sepia(8%);
           filter: sepia(8%);
@@ -271,7 +271,7 @@ p {
 }
 
 header {
-  background-color: #f7f5f7;
+  background-color: rgb(247, 245, 247);
   height: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,7 +285,7 @@ header {
           justify-content: flex-end;
 }
 header nav {
-  color: #cdb398;
+  color: rgb(205, 179, 152);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +313,7 @@ header nav ul {
   left: 1.2%;
   margin: 0;
   padding: 1%;
-  border-left: 1px solid #dfc5ab;
+  border-left: 1px solid rgb(223, 197, 171);
   -webkit-transition: 0.75s opacity 0.5s ease;
   transition: 0.75s opacity 0.5s ease;
 }
@@ -327,12 +327,12 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #cdb398;
+  color: rgb(205, 179, 152);
   -webkit-transition: 0.3s color ease-out;
   transition: 0.3s color ease-out;
 }
 header nav ul li a:hover {
-  color: #71bcd6;
+  color: rgb(113, 188, 214);
 }
 header nav .fa-moon {
   -webkit-transform: rotate(-130deg);
@@ -346,8 +346,8 @@ header nav .fa-moon {
 }
 
 .landing {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #cdb398), color-stop(50%, #f7f5f7));
-  background: linear-gradient(to top, #cdb398 50%, #f7f5f7 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgb(205, 179, 152)), color-stop(50%, rgb(247, 245, 247)));
+  background: linear-gradient(to top, rgb(205, 179, 152) 50%, rgb(247, 245, 247) 50%);
 }
 .landing .landing-container {
   display: -webkit-box;
@@ -383,7 +383,7 @@ header nav .fa-moon {
   line-height: 1.1;
 }
 .landing .header h1 .headerWord1 {
-  color: #cdb398;
+  color: rgb(205, 179, 152);
   position: relative;
   top: 20px;
   -webkit-animation: slideUp 4s ease-in-out;
@@ -391,7 +391,7 @@ header nav .fa-moon {
   z-index: 10;
 }
 .landing .header h1 .headerWord2 {
-  color: #f7f5f7;
+  color: rgb(247, 245, 247);
   position: relative;
   left: 20%;
   -webkit-animation: slideDown 4s ease-in-out;
@@ -403,7 +403,7 @@ header nav .fa-moon {
   position: relative;
   left: 20%;
   top: 5%;
-  color: #f7f5f7;
+  color: rgb(247, 245, 247);
   -webkit-animation: fadeIn 5s ease-in;
           animation: fadeIn 5s ease-in;
 }
@@ -437,7 +437,7 @@ header nav .fa-moon {
 @-webkit-keyframes slideDown {
   0% {
     bottom: 80px;
-    color: #f7f5f7;
+    color: rgb(247, 245, 247);
   }
   100% {
     bottom: 0px;
@@ -446,7 +446,7 @@ header nav .fa-moon {
 @keyframes slideDown {
   0% {
     bottom: 80px;
-    color: #f7f5f7;
+    color: rgb(247, 245, 247);
   }
   100% {
     bottom: 0px;
@@ -515,8 +515,8 @@ header nav .fa-moon {
   }
 }
 .aboutMe {
-  background-color: #cdb398;
-  color: #1e2528;
+  background-color: rgb(205, 179, 152);
+  color: rgb(30, 37, 40);
 }
 .aboutMe .aboutMeContainer {
   padding-bottom: 5%;
@@ -547,7 +547,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: -5px;
-  color: #f7f5f7;
+  color: rgb(247, 245, 247);
   position: relative;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank p {
@@ -577,14 +577,14 @@ header nav .fa-moon {
   transition: 0.4s transform ease-out, 0.4s -webkit-transform ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a {
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
   font-size: 2rem;
   -webkit-transition: 0.4s color ease-out;
   transition: 0.4s color ease-out;
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li a:focus {
-  color: #71bcd6;
+  color: rgb(113, 188, 214);
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li:hover,
 .aboutMe .aboutMeContainer .aboutMeFlex .blank ul li:focus {
@@ -592,7 +592,7 @@ header nav .fa-moon {
           transform: scale(1.2);
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio {
-  border-left: 2px solid #e76b6b;
+  border-left: 2px solid rgb(231, 107, 107);
   width: 65%;
   padding: 5%;
   display: -webkit-box;
@@ -620,8 +620,8 @@ header nav .fa-moon {
   padding: 2%;
   text-decoration: none;
   border: none;
-  background-color: #e76b6b;
-  color: #f7f5f7;
+  background-color: rgb(231, 107, 107);
+  color: rgb(247, 245, 247);
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -642,7 +642,7 @@ header nav .fa-moon {
 .aboutMe .aboutMeContainer .aboutMeFlex .bio a:focus {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  background-color: #71bcd6;
+  background-color: rgb(113, 188, 214);
 }
 .aboutMe .aboutMeContainer .aboutMeFlex .bio button:active,
 .aboutMe .aboutMeContainer .aboutMeFlex .bio a:active {
@@ -651,11 +651,11 @@ header nav .fa-moon {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  background-color: #e76b6b;
+  background-color: rgb(231, 107, 107);
 }
 
 .projects {
-  background: #ddd6cc;
+  background: rgb(221, 214, 204);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,7 +674,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 600;
   letter-spacing: -3px;
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
   text-align: end;
   text-transform: uppercase;
   display: inline-block;
@@ -698,7 +698,7 @@ header nav .fa-moon {
   padding: 0;
 }
 .projects ul li {
-  width: calc(100% / 2);
+  width: 50%;
   padding: 2.5%;
   min-width: 325px;
 }
@@ -731,7 +731,7 @@ header nav .fa-moon {
 .projects ul li div h3 {
   text-align: center;
   text-transform: uppercase;
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
 }
 .projects ul li div:hover,
 .projects ul li div:focus {
@@ -740,7 +740,7 @@ header nav .fa-moon {
 }
 
 .tools {
-  background-color: #f7f5f7;
+  background-color: rgb(247, 245, 247);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,7 +759,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -5px;
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
   text-align: end;
   text-transform: uppercase;
   position: relative;
@@ -795,7 +795,7 @@ header nav .fa-moon {
           align-items: center;
   min-width: 100px;
   padding: 5%;
-  color: #cdb398;
+  color: rgb(205, 179, 152);
 }
 .tools ul li i {
   font-size: 3rem;
@@ -804,11 +804,11 @@ header nav .fa-moon {
 }
 .tools ul li i:hover,
 .tools ul li i:focus {
-  color: #71bcd6;
+  color: rgb(113, 188, 214);
 }
 .tools ul li i:hover + p,
 .tools ul li i:focus + p {
-  color: #1e2528;
+  color: rgb(30, 37, 40);
 }
 .tools ul li p {
   font-size: 1rem;
@@ -817,7 +817,7 @@ header nav .fa-moon {
 }
 
 .contact {
-  background: #cdb398;
+  background: rgb(205, 179, 152);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +839,7 @@ header nav .fa-moon {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -3px;
-  color: #f7f5f7;
+  color: rgb(247, 245, 247);
   text-align: end;
   text-transform: uppercase;
   margin-bottom: 7%;
@@ -879,22 +879,22 @@ header nav .fa-moon {
 .contact .contactBox ul li p {
   font-size: 1rem;
   font-weight: 600;
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
   -webkit-transition: 0.3s color ease-out;
   transition: 0.3s color ease-out;
 }
 .contact .contactBox ul li a {
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
   -webkit-transition: 0.4s color ease-out;
   transition: 0.4s color ease-out;
 }
 .contact .contactBox ul li a:hover,
 .contact .contactBox ul li a:focus {
-  color: #71bcd6;
+  color: rgb(113, 188, 214);
 }
 .contact .contactBox ul li a:hover + p,
 .contact .contactBox ul li a:focus + p {
-  color: #1e2528;
+  color: rgb(30, 37, 40);
 }
 .contact .contactBox ul li:hover,
 .contact .contactBox ul li:focus {
@@ -928,19 +928,19 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 7vh;
-  color: #f7f5f7;
-  background: #cdb398;
+  color: rgb(247, 245, 247);
+  background: rgb(205, 179, 152);
   font-weight: 600;
 }
 footer span a {
   text-decoration: none;
-  color: #f7f5f7;
+  color: rgb(247, 245, 247);
   -webkit-transition: 0.3s color ease-out;
   transition: 0.3s color ease-out;
 }
 footer span a:hover,
 footer span a:focus {
-  color: #e76b6b;
+  color: rgb(231, 107, 107);
 }
 
 @media (max-width: 1103px) {
@@ -973,8 +973,8 @@ footer span a:focus {
   }
 
   .landing {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #cdb398), color-stop(45%, #f7f5f7));
-    background: linear-gradient(to top, #cdb398 45%, #f7f5f7 45%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, rgb(205, 179, 152)), color-stop(45%, rgb(247, 245, 247)));
+    background: linear-gradient(to top, rgb(205, 179, 152) 45%, rgb(247, 245, 247) 45%);
   }
   .landing .landing-container {
     display: -webkit-box;
@@ -997,8 +997,8 @@ footer span a:focus {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #cdb398), color-stop(50%, #f7f5f7));
-    background: linear-gradient(to top, #cdb398 50%, #f7f5f7 50%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgb(205, 179, 152)), color-stop(50%, rgb(247, 245, 247)));
+    background: linear-gradient(to top, rgb(205, 179, 152) 50%, rgb(247, 245, 247) 50%);
   }
   .landing .landing-container .header h1 {
     position: relative;
@@ -1029,7 +1029,7 @@ footer span a:focus {
     margin: 0 15%;
   }
   .aboutMe .aboutMeContainer .aboutMeFlex .bio {
-    border-right: 2px solid #e76b6b;
+    border-right: 2px solid rgb(231, 107, 107);
   }
 
   .projects h2 {
@@ -1115,8 +1115,8 @@ footer span a:focus {
 }
 @media (max-width: 550px) {
   header nav ul {
-    background: #f7f5f7;
-    border: 1px solid #cdb398;
+    background: rgb(247, 245, 247);
+    border: 1px solid rgb(205, 179, 152);
     padding: 5%;
     z-index: 20;
   }
