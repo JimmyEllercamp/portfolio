@@ -233,23 +233,9 @@ body {
     background: black;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 0;
-}
-
 .landing-menu {
     color: white;
     animation: 1s ease-in 0.2s both fadeIn;
-    /* background: url("../assets/styles/images/specialBoy.jpeg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
 }
 
 .landing-header {
@@ -257,7 +243,8 @@ h6 {
     justify-content: center;
     align-items: center;
     height: 10%;
-    letter-spacing: 2px;
+    letter-spacing: -2px;
+    font-size: 1.5rem;
 }
 
 .landing-main {
@@ -265,7 +252,6 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* animation: 1s ease-in 0.5s both fadeIn; */
 }
 
 .landing-main ul {
@@ -276,11 +262,9 @@ h6 {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* backdrop-filter: blur(5px); */
 }
 
 .landing-main ul li {
-    font-weight: 700;
     font-size: 1.5rem;
     margin: 0 5%;
 }
@@ -295,22 +279,13 @@ h6 {
 }
 
 .landing-main a:hover {
-    color: hotpink;
-    transition: all ease 0.2s;
+    color: #67d9d9;
+    transition: all ease 0.3s;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes softFadeIn {
-    from {
-        opacity: 0.5;
     }
     to {
         opacity: 1;
