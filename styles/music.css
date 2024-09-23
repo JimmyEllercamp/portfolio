@@ -358,11 +358,13 @@ img {
     margin: 5% auto;
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.playlist:has(> .video-playlist) {
+    max-width: 85%;
 }
 
 main {
@@ -372,6 +374,10 @@ main {
 footer {
     margin: 5% 0;
     animation: 1s ease-in 0.2s both fadeIn;
+}
+
+footer.wrapper {
+    height: auto;
 }
 
 .contact p {
