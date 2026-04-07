@@ -700,11 +700,13 @@ header nav .fa-moon {
     filter: saturate(100%);
 }
 
+/* skills */
+
 .tools {
     background-color: rgb(247, 245, 247);
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -728,55 +730,50 @@ header nav .fa-moon {
     margin: 5% 0 3%;
 }
 .tools ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    /* display: flex; */
+    /* width: 250px; */
+    /* -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     list-style: none;
+    /* padding: 0;
+    margin-bottom: 5%; */
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers the items horizontally */
     padding: 0;
     margin-bottom: 5%;
 }
 .tools ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    /* display: flex; */
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: column; */
+    /* flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: center; */
+    /* justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    min-width: 100px;
-    padding: 5%;
+    align-items: center; */
+    /* min-width: 100px; */
+    /* padding: 1%; */
+    width: 45%; /* Ensures two items fit per row with some spacing */
+    margin: 2.5%; /* Adds spacing between items */
+    text-align: center;
     color: rgb(205, 179, 152);
-}
-.tools ul li i {
-    font-size: 3rem;
-    -webkit-transition: 0.3s color ease-out;
-    transition: 0.3s color ease-out;
-}
-.tools ul li i:hover,
-.tools ul li i:focus {
-    color: rgb(113, 188, 214);
-}
-.tools ul li i:hover + p,
-.tools ul li i:focus + p {
-    color: rgb(30, 37, 40);
 }
 .tools ul li p {
     font-size: 1rem;
-    -webkit-transition: 0.3s color ease-out;
-    transition: 0.3s color ease-out;
+    /* -webkit-transition: 0.3s color ease-out;
+    transition: 0.3s color ease-out; */
 }
-
 .contact {
     background: rgb(205, 179, 152);
     display: -webkit-box;
