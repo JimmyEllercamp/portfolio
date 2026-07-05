@@ -2,9 +2,35 @@
     "content": [
         {
             "title": "About Me",
-            "description": "Hi, I'm James, a coder, multi-instrumentalist, and screen composer.\n\nAs an experienced developer and music producer, I bridge the technical and creative aspects of each project. My current work includes full-stack web architectures, real-time interactive game development, and end-to-end creative production.\n\nI have a reliable track record of moving seamlessly between front-end user interfaces, back-end services, gameplay systems, and building UX-optimized, scalable web apps.\n\nMy background in screen composition has served as a foundation to follow creative briefs and work collaboratively in cross-functional settings.\n\nI grew up in Sydney, Australia and travelled the world before settling in Canada. My goal is to combine my skills and creative background as a composer, and my web and game development coding skills to build unique, beautiful and cutting edge projects that people have difficulty forgetting.",
             "image": "./images/code.jpg",
-            "link": "./code.html"
+            "link": "./code.html",
+            "genres": {
+                "Sci-Fi": [
+                    "Transmission received. I'm James—a digital systems architect, multi-instrumentalist, and sonic screen composer wandering the tech expanse.[cite: 1] My operations bridge the divide between technical frameworks and creative logic, spanning full-stack web grids, real-time game loops, and deep-space creative production.",
+                    "I possess a proven trajectory navigating seamlessly between frontend atmospheric interfaces, backend infrastructure nodes, and live gameplay systems to deploy highly stable, UX-optimized web applications.",
+                    "My background in screen composition serves as a cognitive baseline to interpret complex creative briefs and execute alongside cross-functional squads.[cite: 1] Originally deployed from the Sydney coordinate, I crossed hemispheres to settle in Canada[cite: 1], driven by a singular directive: fusing code and orchestration to build cutting-edge digital realities that defy system memory.[cite: 1]"
+                ],
+                "Action": [
+                    "Listen up, I'm James: full-stack coder, heavy-hitting multi-instrumentalist, and combat-ready screen composer.[cite: 1] I drop into the absolute center of engineering to smash the barrier between cold tech and raw creative production, deploying high-intensity web architectures and real-time interactive game systems.",
+                    "I've got a reliable track record of moving fluidly between frontend user interfaces, backend codebases, and core gameplay loops, building weaponized, UX-optimized, and highly scalable web apps.",
+                    "A background in high-stakes screen composition taught me how to follow aggressive creative briefs and execute flawlessly in fast-paced, cross-functional fireteams.[cite: 1] Born in Sydney, I fought my way across the globe before anchoring down in Canada[cite: 1] to combine elite programming with tactical musical composition, creating cutting-edge projects that leave a lasting impact.[cite: 1]"
+                ],
+                "Romance": [
+                    "Greetings, traveler. I'm James—a passionate coder, soulful multi-instrumentalist, and romantic screen composer.[cite: 1] I live to bridge the beautiful, aching space between technology and artistry, pouring my heart into elegant full-stack web architectures, captivating interactive game worlds, and deep creative production.",
+                    "My spirit moves seamlessly between delicate frontend interfaces, devoted backend services, and interactive gameplay systems, tenderly crafting UX-optimized, scalable web applications that connect on a human level.",
+                    "A rich history in screen composition has taught me how to listen deeply to emotional creative briefs and work in perfect, cross-functional harmony.[cite: 1] Swept away from the sunny shores of Sydney, I crossed oceans to settle in Canada[cite: 1], bound by a dream: uniting the beauty of music and the elegance of code to create enchanting projects you will hold in your memory forever.[cite: 1]"
+                ],
+                "Horror": [
+                    "They call me James. Coder. Multi-instrumentalist. Screen composer.[cite: 1] I operate in the spaces between code and sound, bridging the terrifying divide between technical logic and creative obsession. My current work haunts full-stack web architectures, real-time interactive game engines, and unpredictable creative production.",
+                    "I move like a ghost between bleeding frontend interfaces, buried backend microservices, and volatile gameplay loops, resurrecting UX-optimized, highly scalable web applications.",
+                    "My background scoring psychological screen music trained me to dissect twisted creative briefs and survive intense, cross-functional settings.[cite: 1] Creeping out from Sydney, Australia, I wandered the world before burying my roots in Canada[cite: 1], driven to bind code and composition into beautiful, cutting-edge monstrosities that will haunt your memory forever.[cite: 1]"
+                ],
+                "Comedy": [
+                    "Hey, I'm James, a coder, multi-instrumentalist, and screen composer who clearly couldn't pick just one career path.[cite: 1] I spend my days pretending to bridge the gap between technical engineering and creative production, which mostly means arguing with full-stack web architectures, real-time game loops, and endless asset pipelines.",
+                    "I have a highly dramatic track record of running frantically between frontend user interfaces, backend emergencies, and gameplay bugs, somehow resulting in functional, UX-optimized, and scalable web apps.",
+                    "Turns out, a background in screen composition is great training for taking wildly vague creative briefs and cooperating with people in high-stress, cross-functional rooms.[cite: 1] Escaped from Sydney, took a very long detour around the world, and somehow ended up in Canada[cite: 1] to combine code and chords into unique projects that you'll have a genuinely hard time forgetting.[cite: 1]"
+                ]
+            }
         },
         {
             "title": "Code",

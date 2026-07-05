@@ -460,45 +460,108 @@ h3,
 
 /* Themes */
 
-.theme-btn {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 500;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    cursor: pointer;
+/* --- Global Theme Binding --- */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body), sans-serif;
+    /* This transition smoothly morphs the entire webpage's colors and spacing */
+    transition:
+        background-color 0.6s ease,
+        color 0.6s ease,
+        border-color 0.6s ease;
+}
 
-    /* Variables drive the button look completely */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading), serif;
+    font-weight: var(--weight-heading, 400);
+}
+
+h3,
+.nav a {
+    color: var(--text-muted);
+}
+
+/* --- 1. SCI-FI (Cyber Terminal Theme) --- */
+.genre-sci-fi {
+    --bg: #0b0f19; /* Deep cosmic slate */
+    --text: #e2e8f0; /* Silver text */
+    --text-muted: #64748b; /* Dark tech slate */
+    --accent: #00f2fe; /* Electric neon cyan */
+    --font-heading: "Space Grotesk";
+    --font-body: "Space Grotesk";
+}
+
+/* --- 2. ACTION (Overdrive Theme) --- */
+.genre-action {
+    --bg: #141414; /* Carbon black */
+    --text: #ffffff;
+    --text-muted: #888888;
+    --accent: #ff5722; /* High-octane hazard orange */
+    --font-heading: "Oswald";
+    --font-body: "Plus Jakarta Sans";
+    --weight-heading: 700; /* Aggressive, bold titles */
+}
+
+/* --- 3. ROMANCE (La Vie En Rose Theme) --- */
+.genre-romance {
+    --bg: #faf6f0; /* Soft warm linen cream */
+    --text: #2a1f1d; /* Deep espresso */
+    --text-muted: #8c7a76; /* Dusty rose gray */
+    --accent: #b83b5e; /* Velvet crimson */
+    --font-heading: "Cormorant Garamond";
+    --font-body: "Plus Jakarta Sans";
+}
+
+/* --- 4. HORROR (The Abyss Theme) --- */
+.genre-horror {
+    --bg: #050505; /* Void black */
+    --text: #999999; /* Cold ash gray */
+    --text-muted: #444444; /* Shadow gray */
+    --accent: #800000; /* Visceral blood maroon */
+    --font-heading: "Cinzel";
+    --font-body: "Cinzel";
+}
+
+/* --- 5. COMEDY (Pop Studio Theme) --- */
+.genre-comedy {
+    --bg: #f0f4f8; /* Bright cheerful off-white */
+    --text: #101820; /* Crisp dark navy */
+    --text-muted: #5f6c7d;
+    --accent: #6200ee; /* Vibrant energetic purple */
+    --font-heading: "Plus Jakarta Sans";
+    --font-body: "Plus Jakarta Sans";
+    --weight-heading: 600;
+}
+
+/* --- Dynamic UI Integrations --- */
+.resume-link {
+    border: 2px solid var(--text-muted);
+}
+.resume-link:hover,
+.nav a:hover,
+.contact-btns a:hover {
     color: var(--accent);
+    border-color: var(--accent);
+}
+.genre-btn {
+    font-family: var(--font-body), sans-serif;
+    color: var(--accent);
+    cursor: pointer;
     border: none;
     background: none;
-
-    position: fixed;
-    bottom: 15px; /* Moved to top to match your header nav space */
-    right: 15px;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-}
-
-.theme-btn:hover {
-    color: var(--btn-hover);
-    transform: translateY(-1px);
-}
-
-.light-mode {
-    --bg: #fdfbf7;
-    --text: #1c1b19;
-    --text-muted: #6f6c66;
-    --accent: #c28e6b;
-    --btn-hover: #1c1b19;
-}
-
-.dark-mode {
-    --bg: #121212;
-    --text: #f4f0ea;
-    --text-muted: #9e9a93;
-    --accent: #e0a982;
-    --btn-hover: #f4f0ea;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
 }
 
 /* Animations */
