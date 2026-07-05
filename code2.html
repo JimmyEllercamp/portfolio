@@ -3,19 +3,142 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/cyberpunk.css" />
-        <title>New Code</title>
+        <title>James Ellercamp Code</title>
+        <link rel="stylesheet" href="./styles/style2.css" />
+        <script
+            src="https://kit.fontawesome.com/356a2141ec.js"
+            crossorigin="anonymous"
+        ></script>
+        <meta
+            name="description"
+            content="James Ellercamp is a multi-instrumentalist screen composer and developer. A member of the Screen Composers
+                    Guild of Canada, his work as a composer and music producer
+                    has been featured in games, podcasts, and film."
+        />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./assets/styles/images/favicon.png"
+        />
+        <!-- Preload heroContainer image -->
+        <link
+            rel="preload"
+            as="image"
+            href="./assets/styles/images/heroJimmy3.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
     </head>
-    <body>
-        <section>
-            <div class="cube">
-                <div class="face left">Left</div>
-                <div class="face front">Front</div>
-                <div class="face back">Back</div>
-                <div class="face right">Right</div>
-                <div class="face top">Top</div>
-                <div class="face bottom">Fuck you Andre.</div>
+    <body class="light-mode wrapper">
+        <section class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Menu</a>
+                </li>
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </section>
+        <section class="landing" id="landing">
+            <div class="code2-container">
+                <button class="theme-btn">Theme</button>
+                <div class="landing">
+                    <div class="header">
+                        <h1>JAMES ELLERCAMP</h1>
+                        <h3>Software Engineer II / Composer</h3>
+                    </div>
+                    <!-- <div class="img-container">
+                        <img
+                            src="./assets/styles/images/heroJimmy3.png"
+                            alt="James Ellercamp holding a midi keyboard"
+                        />
+                    </div> -->
+                </div>
             </div>
         </section>
+        <section class="about-me" id="about-me">
+            <div class="about-me-container">
+                <!-- <div class="about-me-flex"> -->
+                <h2>About Me</h2>
+                <p class="about-me-text"></p>
+                <div class="resume-link-container">
+                    <a
+                        href="assets/files/james-ellercamp-resume-pic-final.pdf"
+                        class="resume-link"
+                    >
+                        View Resume
+                        <i class="fas fa-file-download"></i>
+                    </a>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>React</li>
+                    <li>Unity</li>
+                    <li>WebGL</li>
+                    <li>Logic Pro X</li>
+                    <li>JavaScript</li>
+                    <li>Typescript</li>
+                    <li>C#</li>
+                    <li>Golang</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Git/Bitbucket/Github/Sourcetree</li>
+                    <li>RESTful APIs</li>
+                    <li>DBeaver</li>
+                    <li>Docker</li>
+                    <li>PWAs</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <h2>Featured Projects</h2>
+            </div>
+        </section>
+        <footer class="contact" id="contact">
+            <h2>Get In Touch...</h2>
+            <div class="contact-btns">
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/jamesellercamp/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/JimmyEllercamp"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:jamesellerdiem@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="module" src="./scripts/script2.js"></script>
     </body>
 </html>
