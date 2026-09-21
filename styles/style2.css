@@ -344,7 +344,6 @@ h3,
 }
 
 /* about me */
-
 .about-me,
 .contact,
 .skills,
@@ -353,19 +352,15 @@ h3,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.about-me h2,
-.skills h2,
-.projects h2 {
-    transform: translateX(-25%);
-    margin-bottom: 20px;
+    align-items: stretch; /* allow children to take full width so headings align */
+    margin: 0 auto;
+    margin-top: 1.5em;
 }
 
 .about-me p {
     max-width: 600px;
     margin: 0 auto;
+    /* text-align: center; */
 }
 
 .resume-link-container {
@@ -401,6 +396,10 @@ h3,
     margin-top: 5%;
 }
 
+.skills-container {
+    width: 100%;
+}
+
 .skills-container ul {
     max-width: 600px;
     display: flex;
@@ -415,8 +414,28 @@ h3,
 }
 
 /* projects */
-.projects {
+/* .projects {
     max-width: 600px;
+} */
+.project3 {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project3 .img-container a {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container h2 {
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* contact container layout */
@@ -517,4 +536,179 @@ h3,
     .skills h2 {
         transform: translateX(0%);
     }
+}
+
+/* Projects video grid */
+.video-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two per row by default */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-card h3 {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.project-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex: 1 1 auto; /* allow description to grow so link sits at bottom */
+}
+
+.project-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto; /* push link to bottom of card */
+}
+
+@media (max-width: 640px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .wrapper {
+        width: 94%;
+    }
+
+    /* Mobile tweaks for code page and general small screens */
+    .wrapper {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* keep nav layout unchanged on mobile to avoid breaking header layout */
+
+    .header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .header h3 {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .img-container img {
+        width: 70%;
+        min-width: 140px;
+        margin-top: 10px;
+    }
+
+    .skills-container ul {
+        gap: 14px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .project-card {
+        padding: 14px;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        margin-bottom: 28px;
+    }
+
+    .about-me p,
+    .project-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .theme-btn {
+        bottom: 12px;
+        right: 12px;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    .header h3 {
+        font-size: 0.9rem;
+    }
+    .nav a {
+        font-size: 0.9rem;
+    }
+    .project-card h3 {
+        font-size: 0.95rem;
+    }
+    .project-card a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 3000px) {
+    .video-grid {
+        grid-template-columns: repeat(
+            4,
+            1fr
+        ); /* single row for up to 4 items on very wide screens */
+    }
+}
+
+/* Ensure project images stretch to match video aspect and width */
+.project-card .img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect */
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 0; /* override global .img-container spacing so cards align */
+}
+
+.project-card .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* More space below the Featured Projects heading */
+.projects h2,
+.skills h2,
+.about-me h2 {
+    margin-bottom: 40px;
 }
