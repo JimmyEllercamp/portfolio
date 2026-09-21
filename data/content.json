@@ -1,0 +1,16 @@
+{
+    "content": [
+        {
+            "title": "About Me",
+            "description": "Hi, I'm James, a coder, multi-instrumentalist, and screen composer.\n\nAs an experienced developer and music producer, I bridge the technical and creative aspects of each project. My current work includes full-stack web architectures, real-time interactive game development, and end-to-end creative production.\n\nI have a reliable track record of moving seamlessly between front-end user interfaces, back-end services, gameplay systems, and building UX-optimized, scalable web apps.\n\nMy background in screen composition has served as a foundation to follow creative briefs and work collaboratively in cross-functional settings.\n\nI grew up in Sydney, Australia and travelled the world before settling in Canada. My goal is to combine my skills and creative background as a composer, and my web and game development coding skills to build unique, beautiful and cutting edge projects that people have difficulty forgetting.",
+            "image": "./images/code.jpg",
+            "link": "./code.html"
+        },
+        {
+            "title": "Code",
+            "description": "A collection of my coding projects and experiments.",
+            "image": "./images/code.jpg",
+            "link": "./code.html"
+        }
+    ]
+}

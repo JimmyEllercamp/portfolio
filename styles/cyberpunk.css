@@ -1,3 +1,5 @@
+/* reset  */
+
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -222,257 +224,88 @@ html {
     overflow: hidden;
 }
 
+/* Style code */
+
 html {
-    font-size: 125%;
-}
-
-html,
-body {
-    height: 100%;
     width: 100%;
-    background: black;
-    filter: saturate(85%);
-}
-
-.wrapper {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
     height: 100%;
 }
 
 body {
-    color: whitesmoke;
-    background-color: #000;
-    filter: saturate(85%);
-}
-
-nav {
-    position: sticky;
-}
-
-.navbar {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
     width: 100%;
-    padding: 0;
-    height: 5vh;
-    border-bottom: 1px solid whitesmoke;
-    position: sticky;
-}
-
-.navbar li {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li a {
-    font-family: inherit;
-    text-decoration: none;
-    color: #f8f8ff;
-    transition: all 0.3s ease-in;
-}
-
-.navbar li a:hover {
-    color: #67d9d9;
-}
-
-.title {
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid hotpink;
+    background: #000;
+}
+
+section {
     width: 100%;
-}
-
-.music-header {
-    text-align: center;
-    letter-spacing: -2px;
-    margin-bottom: 15px;
-    color: #e6e6fa;
-}
-
-.image-container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.about,
-.music {
-    margin-top: 5%;
-}
-.about h2,
-.music h2 {
-    letter-spacing: -1px;
-    color: #e6e6fa;
-    position: relative;
-    right: 5%;
-}
-
-.about p {
-    max-width: 600px;
-    margin: 25px auto;
-}
-
-.about a,
-.contact a {
-    text-decoration: none;
-    color: #67d9d9;
-    transition: all 0.3s ease;
-}
-.about a:hover,
-.contact a:hover {
-    letter-spacing: 3px;
-    color: #bc6bff;
-}
-
-.about .photo-container {
-    width: 50%;
-    margin: 5% auto;
-}
-
-.photo-container img {
-    border-radius: 3%;
-    border: 1px solid whitesmoke;
-}
-
-.music h3 {
-    margin-top: 5%;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.video-playlist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.playlist {
-    margin: 5% auto;
-    width: 100%;
-    max-width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.playlist:has(> .video-playlist) {
-    max-width: 85%;
+    perspective: 800px;
 }
 
-/* Video grid for music page */
-.video-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    margin: 30px auto 60px;
-    max-width: 1100px;
-}
-
-.video-card {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 18px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.video-card .video-wrapper {
+.cube {
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 200px;
+    /* perspective: 600px; */
+    transform-style: preserve-3d;
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 6px;
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
 
-.video-card .video-wrapper iframe {
+.face {
+    /* width: 200px;
+    height: 200px; */
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    right: 0;
+    background: #27bd7a;
+    border: 1px solid #8a00c4;
+    box-shadow: inset 0 0 0 1px hotpink;
+    /* transform-origin: center center 0; */
 }
 
-.video-card p {
-    margin: 0;
-    color: #dcdcdc;
+.front {
+    z-index: 60;
 }
 
-.video-card a {
-    color: #c28e6b;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: auto;
+.left {
+    z-index: 50;
+    transform: rotateY(-90deg) translateZ(100px) translatex(-100px);
 }
 
-/* Poster fallback styling */
-.poster-wrapper .video-poster {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 6px;
-    text-decoration: none;
-}
-.poster-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.poster-wrapper .play-overlay {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    color: rgba(255,255,255,0.9);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+.right {
+    z-index: 40;
+    transform: rotateY(90deg) translateZ(100px) translatex(100px);
 }
 
-@media (max-width: 800px) {
-    .video-grid {
-        grid-template-columns: 1fr;
-    }
+.back {
+    z-index: 30;
+    transform: translateZ(-200px);
 }
 
-main {
-    animation: 1s ease-in 0.2s both fadeIn;
+.top {
+    z-index: 20;
 }
 
-footer {
-    margin: 5% 0;
-    animation: 1s ease-in 0.2s both fadeIn;
-}
-
-footer.wrapper {
-    height: auto;
-}
-
-.contact p {
-    text-align: center;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.bottom {
+    z-index: 10;
+    transform-origin: center bottom 0;
+    transform: rotateX(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

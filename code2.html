@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>James Ellercamp Code</title>
+        <link rel="stylesheet" href="./styles/style2.css" />
+        <script
+            src="https://kit.fontawesome.com/356a2141ec.js"
+            crossorigin="anonymous"
+        ></script>
+        <meta
+            name="description"
+            content="James Ellercamp is a multi-instrumentalist screen composer and developer. A member of the Screen Composers
+                    Guild of Canada, his work as a composer and music producer
+                    has been featured in games, podcasts, and film."
+        />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./assets/styles/images/favicon.png"
+        />
+        <!-- Preload heroContainer image -->
+        <link
+            rel="preload"
+            as="image"
+            href="./assets/styles/images/heroJimmy3.png"
+        />
+        <!-- Preconnect and preload project thumbnails for smoother project section -->
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://img.youtube.com" crossorigin />
+        <link rel="preconnect" href="https://s.ytimg.com" crossorigin />
+        <link
+            rel="preload"
+            as="image"
+            href="https://img.youtube.com/vi/nTUMlPzwQkM/hqdefault.jpg"
+            rel="preload"
+            as="image"
+            href="https://img.youtube.com/vi/5m0q3khyGZ8/hqdefault.jpg"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="https://img.youtube.com/vi/1ZqMpkWhtsI/hqdefault.jpg"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="https://img.youtube.com/vi/DI56gCVfy7A/hqdefault.jpg"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="./assets/styles/images/keycloak.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="light-mode wrapper">
+        <section class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Menu</a>
+                </li>
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </section>
+        <section class="landing" id="landing">
+            <div class="code2-container">
+                <button class="theme-btn">Theme</button>
+                <div class="landing">
+                    <div class="header">
+                        <h1>JAMES ELLERCAMP</h1>
+                        <h3>Software Engineer II / Composer</h3>
+                    </div>
+                    <!-- <div class="img-container">
+                        <img
+                            src="./assets/styles/images/heroJimmy3.png"
+                            alt="James Ellercamp holding a midi keyboard"
+                        />
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="about-me-container">
+                <!-- <div class="about-me-flex"> -->
+                <h2>About Me</h2>
+                <p class="about-me-text"></p>
+                <div class="resume-link-container">
+                    <a
+                        href="assets/files/resume-jamesellercamp-2026.pdf"
+                        class="resume-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Resume
+                        <i class="fas fa-file-download"></i>
+                    </a>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>React</li>
+                    <li>Unity</li>
+                    <li>WebGL</li>
+                    <li>Logic Pro X</li>
+                    <li>JavaScript</li>
+                    <li>Typescript</li>
+                    <li>C#</li>
+                    <li>Golang</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Git/Bitbucket/Github/Sourcetree</li>
+                    <li>RESTful APIs</li>
+                    <li>DBeaver</li>
+                    <li>Docker</li>
+                    <li>PWAs</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <h2>Featured Projects</h2>
+
+                <div class="video-grid">
+                    <!-- Project 1: Jeopardy! Bar League -->
+                    <article class="project-card">
+                        <h3>Jeopardy! Bar League</h3>
+                        <div class="video-wrapper">
+                            <iframe
+                                loading="lazy"
+                                src="https://www.youtube.com/embed/nTUMlPzwQkM"
+                                title="Jeopardy! Bar League"
+                                frameborder="0"
+                                allow="
+                                    accelerometer;
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    gyroscope;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <p>
+                            Jeopardy! Bar League is a WebGL-based massive
+                            multiplayer game built with Unity, React and a
+                            Golang backend, with web and Steam deployments.
+                        </p>
+                        <a
+                            href="https://youtu.be/nTUMlPzwQkM"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Watch on YouTube</a
+                        >
+                    </article>
+
+                    <!-- Project 2: Ocean Treasure Hunt -->
+                    <article class="project-card">
+                        <h3>Ocean Treasure Hunt</h3>
+                        <div class="video-wrapper">
+                            <iframe
+                                loading="lazy"
+                                src="https://www.youtube.com/embed/1ZqMpkWhtsI"
+                                title="Ocean Treasure Hunt"
+                                frameborder="0"
+                                allow="
+                                    accelerometer;
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    gyroscope;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <p>
+                            Scratch-card style game built in React. I
+                            implemented the animations and audio systems.
+                        </p>
+                        <a
+                            href="https://youtu.be/1ZqMpkWhtsI"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Watch on YouTube</a
+                        >
+                    </article>
+
+                    <!-- Project 3: Deal Or No Deal -->
+                    <article class="project-card">
+                        <h3>Deal Or No Deal</h3>
+                        <div class="video-wrapper">
+                            <iframe
+                                loading="lazy"
+                                src="https://www.youtube.com/embed/DI56gCVfy7A"
+                                title="Deal Or No Deal"
+                                frameborder="0"
+                                allow="
+                                    accelerometer;
+                                    autoplay;
+                                    clipboard-write;
+                                    encrypted-media;
+                                    gyroscope;
+                                    picture-in-picture;
+                                    web-share;
+                                "
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <p>
+                            Implemented animations and audio systems and
+                            integrated gameplay mechanics.
+                        </p>
+                        <a
+                            href="https://youtu.be/DI56gCVfy7A"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Watch on YouTube</a
+                        >
+                    </article>
+
+                    <!-- Project 4: Keycloak (existing) -->
+                    <article class="project-card">
+                        <h3>STREAMSIX Keycloak</h3>
+                        <div class="img-container">
+                            <a
+                                href="https://auth.streamsix.com/auth/realms/Users/protocol/openid-connect/auth?client_id=tp-jbl&redirect_uri=https%3A%2F%2Fplayjeopardylive.com&state=9c41f69e-5dd6-4cbf-80f2-69236317522f&response_mode=fragment&response_type=code&scope=openid&nonce=37607ea8-6395-48e8-8fb5-de0d0bae4e50"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="./assets/styles/images/keycloak.png"
+                                    alt="STREAMSIX Keycloak login page screenshot"
+                                />
+                            </a>
+                        </div>
+                        <p>
+                            Authentication system for STREAMSIX with custom
+                            themes.
+                        </p>
+                        <a
+                            href="https://auth.streamsix.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Project link</a
+                        >
+                    </article>
+                </div>
+            </div>
+        </section>
+        <footer class="contact" id="contact">
+            <h2>Get In Touch...</h2>
+            <div class="contact-btns">
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/jamesellercamp/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a
+                            href="https://github.com/JimmyEllercamp"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="mailto:jamesellerdiem@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="module" src="./scripts/script2.js"></script>
+    </body>
+</html>
