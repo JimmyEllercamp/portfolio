@@ -326,11 +326,19 @@ img {
     text-decoration: none;
     color: #67d9d9;
     transition: all 0.3s ease;
+    overflow-wrap: anywhere; /* long email address wraps instead of overflowing on narrow screens */
 }
 .about a:hover,
 .contact a:hover {
-    letter-spacing: 3px;
     color: #bc6bff;
+}
+/* Only widen letter-spacing on devices with a real hover (mouse); on touch
+   screens :hover sticks after a tap and the wider text caused overflow */
+@media (hover: hover) {
+    .about a:hover,
+    .contact a:hover {
+        letter-spacing: 3px;
+    }
 }
 
 .about .photo-container {
