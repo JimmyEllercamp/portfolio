@@ -407,10 +407,16 @@ h3,
     justify-content: center;
     align-items: center;
     list-style-type: circle;
-    margin: 0;
-    padding: 0;
+    list-style-position: inside; /* keep bullets inside each item so they don't overlap neighbours or hang off-screen */
     margin: 0 auto;
+    padding: 0;
     gap: 30px; /* Modern layout option to separate the icons cleanly */
+}
+
+.skills-container li {
+    max-width: 100%;
+    text-align: center;
+    overflow-wrap: anywhere; /* long items (e.g. Git/Bitbucket/...) wrap instead of overflowing */
 }
 
 /* projects */
